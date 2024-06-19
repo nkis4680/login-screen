@@ -134,7 +134,7 @@ input:focus {
 }
 
 /****************************************************Font Face**************************************************************/
-/* @font-face {
+@font-face {
   font-family: "CalibriRegular";
   src: url("./fonts/CalibriRegular.ttf") format("ttf"),
     url("./fonts/CalibriRegular.woff2") format("woff2");
@@ -160,4 +160,4 @@ input:focus {
   src: url("./fonts/berlingskesansround-md-webfont.ttf") format("ttf"),
     url("./fonts/berlingskesansround-md-webfont.woff2") format("woff2");
   font-display: swap;
-} */
+}

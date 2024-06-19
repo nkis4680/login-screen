@@ -130,7 +130,10 @@
         cursor: pointer;
         position: relative;
     }
-
+ /* Remove black outline on focus */
+ input[type="checkbox"]:focus {
+        outline: none;
+    }
     /* Style the checkmark/indicator (hidden by default) */
     input[type="checkbox"]::before {
         content: "";
@@ -289,7 +292,9 @@ font-family: "berlingske_sans_roundregular"}.unified_container .row .panel-defau
         }
       
 
-   
+   label{
+    margin: 0;
+   }
         /****************************************************Font Face**************************************************************/
 /* @font-face {
   font-family: "CalibriRegular";

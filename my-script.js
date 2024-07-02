@@ -42,5 +42,5 @@ function setupPwdTogglers(){
     makePwdToggler(pwdInputs[i]);
   }
 }
-
+alert("hi");
 setupPwdTogglers();

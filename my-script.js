@@ -25,7 +25,7 @@ function makePwdToggler(pwd){
             function toggle() {
                 if (pwd.type === 'password') {
                     pwd.type = 'text';
-                    labelText.nodeValue = 'less password';
+                    labelText.nodeValue = 'hide password';
                 } else {
                     pwd.type = 'password';
                     labelText.nodeValue = 'show password';

@@ -37,9 +37,12 @@ function makePwdToggler(pwd){
 }
 
 function setupPwdTogglers(){
+   
   var pwdInputs = document.querySelectorAll('input[type=password]');
+   console.log(pwdInputs,"pwdInputs);
   for (var i = 0; i < pwdInputs.length; i++) {
     makePwdToggler(pwdInputs[i]);
   }
 }
 setupPwdTogglers();
+alert("hello");

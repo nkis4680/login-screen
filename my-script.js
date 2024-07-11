@@ -39,14 +39,17 @@ function makePwdToggler(pwd){
 function setupPwdTogglers(){
    
   //var pwdInputs = document.querySelectorAll('input[type=password]');
-    var pwdInputs = document.querySelectorAll('input[id="password"], input[id="reenterPassword"]');
+    var pwdInputs = document.querySelectorAll('#password');
+    var reenterPwdInputs = document.querySelectorAll('#reenterPassword');
+console.log(pwdInputs,"pwdInputs");
+   console.log(reenterPwdInputs,"reenterPwdInputs");
+    for (var i = 0; i < pwdInputs.length; i++) {
+        makePwdToggler(pwdInputs[i]);
+    }
 
-   console.log(pwdInputs,"pwdInputs");
-  for (var i = 0; i < pwdInputs.length; i++) {
-    makePwdToggler(pwdInputs[i]);
-  }
+    for (var i = 0; i < reenterPwdInputs.length; i++) {
+        makePwdToggler(reenterPwdInputs[i]);
+    }
 }
-document.addEventListener('DOMContentLoaded', function() {
     setupPwdTogglers();
     alert("hello");
-});

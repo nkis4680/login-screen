@@ -46,5 +46,7 @@ function setupPwdTogglers(){
     makePwdToggler(pwdInputs[i]);
   }
 }
-setupPwdTogglers();
-alert("hello");
+document.addEventListener('DOMContentLoaded', function() {
+    setupPwdTogglers();
+    alert("hello");
+});

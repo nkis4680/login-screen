@@ -1,7 +1,9 @@
 function makePwdToggler(pwd){
    var checkbox = document.createElement('input');
             checkbox.setAttribute('type', 'checkbox');
-            var id = pwd.id + 'toggler';
+            //var id = pwd.id + 'toggler';
+       var id = pwd.id ? pwd.id + 'toggler' : 'toggler-' + Math.random().toString(36).substr(2, 9); // Generate a unique ID if pwd.id is undefined
+
             checkbox.setAttribute('id', id);
 
             var label = document.createElement('label');
@@ -39,8 +41,8 @@ function makePwdToggler(pwd){
 function setupPwdTogglers(){
    
   //var pwdInputs = document.querySelectorAll('input[type=password]');
-var pwdInputs = document.querySelector('password');
-var reenterPwdInputs = document.querySelector('reenterPassword');
+    var pwdInputs = document.querySelectorAll('input[type=password]');
+    var reenterPwdInput = document.getElementById('reenterPassword'); // Use ID selector for 'reenterPassword'
    
 console.log(pwdInputs,"pwdInputs");
    console.log(reenterPwdInputs,"reenterPwdInputs");
@@ -48,8 +50,8 @@ console.log(pwdInputs,"pwdInputs");
         makePwdToggler(pwdInputs[i]);
     }
 
-    for (var i = 0; i < reenterPwdInputs.length; i++) {
-        makePwdToggler(reenterPwdInputs[i]);
+    if (reenterPwdInput) {
+        makePwdToggler(reenterPwdInput);
     }
 }
     setupPwdTogglers();

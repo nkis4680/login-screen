@@ -36,11 +36,21 @@ function makePwdToggler(pwd){
             checkbox.onkeydown = toggle;
 }
 
-   function setupPwdTogglerById(id){
-        var pwdInput = document.getElementById(id);
-        makePwdToggler(pwdInput);
+function setupPwdTogglers(){
+   
+  //var pwdInputs = document.querySelectorAll('input[type=password]');
+var pwdInputs = document.querySelector('password');
+var reenterPwdInputs = document.querySelector('reenterPassword');
+   
+console.log(pwdInputs,"pwdInputs");
+   console.log(reenterPwdInputs,"reenterPwdInputs");
+    for (var i = 0; i < pwdInputs.length; i++) {
+        makePwdToggler(pwdInputs[i]);
     }
 
-    setupPwdTogglerById('password');
-    setupPwdTogglerById('reenterPassword');
+    for (var i = 0; i < reenterPwdInputs.length; i++) {
+        makePwdToggler(reenterPwdInputs[i]);
+    }
+}
+    setupPwdTogglers();
     alert("hello");

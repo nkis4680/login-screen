@@ -11,7 +11,7 @@ function makePwdToggler(pwd){
             label.classList.add('show-password-label');
 
             // Add initial text to label
-            var labelText = document.createTextNode('show password');
+            var labelText = document.createTextNode('Show password');
             label.appendChild(labelText);
 
             var div = document.createElement('div');
@@ -25,10 +25,10 @@ function makePwdToggler(pwd){
             function toggle() {
                 if (pwd.type === 'password') {
                     pwd.type = 'text';
-                    labelText.nodeValue = 'hide password';
+                    labelText.nodeValue = 'Hide password';
                 } else {
                     pwd.type = 'password';
-                    labelText.nodeValue = 'show password';
+                    labelText.nodeValue = 'Show password';
                 }
             }
             checkbox.onclick = toggle;

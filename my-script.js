@@ -43,7 +43,8 @@ function setupPwdTogglers(){
   //var pwdInputs = document.querySelectorAll('input[type=password]');
     var pwdInputs = document.querySelectorAll('input[type=password]');
     var reenterPwdInput = document.getElementById('reenterPassword'); // Use ID selector for 'reenterPassword'
-   
+       var reenterPwdInputs = reenterPwdInput ? [reenterPwdInput] : []; // Add reenterPwdInput to array only if it exists
+
 console.log(pwdInputs,"pwdInputs");
    console.log(reenterPwdInputs,"reenterPwdInputs");
     for (var i = 0; i < pwdInputs.length; i++) {

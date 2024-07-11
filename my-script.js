@@ -56,4 +56,4 @@ console.log(pwdInputs,"pwdInputs");
     }
 }
     setupPwdTogglers();
-    alert("hello");
+

@@ -340,7 +340,17 @@
         }
         div#claimVerificationServerError, div#verifying_blurb, div#passwordEntryMismatch {
             color: #fff;
-            font-weight: 600;
+            font-weight: bold;
+        }
+        div#requiredFieldMissing, p#forgotPasswordBlockMessage {
+            color: #fff;
+            font-weight: bold;
+        }
+        .unified_container .row .panel-default #api .intro > p, label#forgotPasswordBlockMessage_label{
+            display: none !important;
+        }
+        #simplemodal-container .simplemodal-data #verifying_blurb {
+            color: #000;
         }
            /****************************************************Font Face**************************************************************/
     @font-face {

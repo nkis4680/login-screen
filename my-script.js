@@ -57,3 +57,4 @@ console.log(pwdInputs,"pwdInputs");
 }
     setupPwdTogglers();
 
+$('#createAccount').after(' for an account');

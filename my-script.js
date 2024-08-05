@@ -57,4 +57,6 @@ console.log(pwdInputs,"pwdInputs");
 }
     setupPwdTogglers();
 
-
+document.addEventListener('DOMContentLoaded', function() {
+    $('#createAccount').after(' for an account');
+});

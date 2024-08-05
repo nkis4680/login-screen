@@ -60,6 +60,6 @@ console.log(pwdInputs,"pwdInputs");
 }
     setupPwdTogglers();
 
-    $('#createAccount').after(' for an account');
+    $('.localAccount #createAccount').after(' for an account');
 
 });

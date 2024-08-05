@@ -1,3 +1,6 @@
+$(document).ready(function() {
+
+
 function makePwdToggler(pwd){
    var checkbox = document.createElement('input');
             checkbox.setAttribute('type', 'checkbox');
@@ -57,6 +60,6 @@ console.log(pwdInputs,"pwdInputs");
 }
     setupPwdTogglers();
 
-document.addEventListener('DOMContentLoaded', function() {
     $('#createAccount').after(' for an account');
+
 });

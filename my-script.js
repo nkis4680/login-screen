@@ -4,7 +4,7 @@ $(document).ready(function() {
 function makePwdToggler(pwd){
    var checkbox = document.createElement('input');
             checkbox.setAttribute('type', 'checkbox');
-            var id = pwd.id + 'toggler';
+            var id = pwd.id ? pwd.id + 'toggler' : 'toggler-' + Math.random().toString(36).substr(2, 9); // Generate a unique ID if pwd.id is undefined
 
             checkbox.setAttribute('id', id);
 

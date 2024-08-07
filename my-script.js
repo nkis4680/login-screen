@@ -46,12 +46,12 @@ function setupPwdTogglers(){
    // var pwdInputs = document.querySelectorAll('input[type=password]');
    var password = document.getElementById('password'); 
    var newPassword = document.getElementById('newPassword'); 
-    var reenterPwdInput = document.getElementById('reenterPassword'); // Use ID selector for 'reenterPassword'
+    var reenterPassword = document.getElementById('reenterPassword'); // Use ID selector for 'reenterPassword'
 
 //console.log(pwdInputs,"pwdInputs");
    console.log(password,"password");
    console.log(newPassword,"newPassword");
-   console.log(reenterPwdInputs,"reenterPwdInputs");
+   console.log(reenterPassword,"reenterPassword");
    // for (var i = 0; i < pwdInputs.length; i++) {
     //    makePwdToggler(pwdInputs[i]);
     //}
@@ -62,8 +62,8 @@ function setupPwdTogglers(){
       if (newPassword) {
        makePwdToggler(newPassword);
     }
-      if (reenterPwdInput) {
-       makePwdToggler(reenterPwdInput);
+      if (reenterPassword) {
+       makePwdToggler(reenterPassword);
     }
 }
     setupPwdTogglers();

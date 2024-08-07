@@ -41,21 +41,28 @@ function makePwdToggler(pwd){
 }
 
 function setupPwdTogglers(){
+
+ var pwdInputs = [
+        document.getElementById('password'),
+        document.getElementById('newPassword'),
+        document.getElementById('reenterPassword')
+    ];
+
+
    
   //var pwdInputs = document.querySelectorAll('input[type=password]');
-    var pwdInputs = document.querySelectorAll('input[type=password]');
-    var reenterPwdInput = document.getElementById('reenterPassword'); // Use ID selector for 'reenterPassword'
-       var reenterPwdInputs = reenterPwdInput ? [reenterPwdInput] : []; // Add reenterPwdInput to array only if it exists
+   // var pwdInputs = document.querySelectorAll('input[type=password]');
+    //var reenterPwdInput = document.getElementById('reenterPassword'); // Use ID selector for 'reenterPassword'
 
 console.log(pwdInputs,"pwdInputs");
-   console.log(reenterPwdInputs,"reenterPwdInputs");
+   //console.log(reenterPwdInputs,"reenterPwdInputs");
     for (var i = 0; i < pwdInputs.length; i++) {
         makePwdToggler(pwdInputs[i]);
     }
 
-    if (reenterPwdInput) {
-        makePwdToggler(reenterPwdInput);
-    }
+   // if (reenterPwdInput) {
+    //    makePwdToggler(reenterPwdInput);
+    //}
 }
     setupPwdTogglers();
 

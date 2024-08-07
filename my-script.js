@@ -45,7 +45,7 @@ function setupPwdTogglers(){
   //var pwdInputs = document.querySelectorAll('input[type=password]');
    // var pwdInputs = document.querySelectorAll('input[type=password]');
    var password = document.getElementById('password'); 
-   var newPassword = document.getElementById('reenterPassword'); 
+   var newPassword = document.getElementById('newPassword'); 
     var reenterPwdInput = document.getElementById('reenterPassword'); // Use ID selector for 'reenterPassword'
 
 //console.log(pwdInputs,"pwdInputs");

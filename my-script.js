@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+/***instructions***/
+var refererUrl = document.referrer;
+if (refererUrl && refererUrl !== "") {
+    $('#hidden-text-redirect-url').text(refererUrl);
+} else {
+    $('#hidden-text-redirect-url').text("Referrer information not available.");
+}
+/***instructions***/
 
 function makePwdToggler(pwd){
    var checkbox = document.createElement('input');

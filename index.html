@@ -201,13 +201,23 @@
         font-size: 20px; /* Adjust as necessary */
         color: white;
     }
-    .rememberMe label{
-      font-size:20px;
-      line-height:20px;
-      color:#243508;
-      font-family: "roobert_regular",sans-serif;
-      font-weight:normal;
+
+    .rememberMe label {
+        font-size: 14px;
+        line-height: 25px;
+        color: #243508;
+        font-family: "roobert_regular",sans-serif;
+        font-weight: normal;
     }
+
+
+    @media(min-width:420px) {
+        .rememberMe label {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+
     /* Show the checkmark/indicator when the checkbox is checked */
     input[type="checkbox"]:checked::before {
         display: block;

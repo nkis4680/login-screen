@@ -5,7 +5,7 @@
     
     <title>Sign up or sign in</title>
 
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -201,13 +201,26 @@
         font-size: 20px; /* Adjust as necessary */
         color: white;
     }
+
     .rememberMe label{
-      font-size:20px;
-      line-height:20px;
+      font-size:14px;
+      line-height:25px;
       color:#243508;
       font-family: "roobert_regular",sans-serif;
       font-weight:normal;
     }
+    
+
+    @media(min-width:420px)
+    {
+      .rememberMe label{
+        font-size:20px;
+        line-height:20px;
+      }
+    }
+
+    
+
     /* Show the checkmark/indicator when the checkbox is checked */
     input[type="checkbox"]:checked::before {
         display: block;
@@ -548,7 +561,7 @@ font-family: "berlingske_sans_roundregular"}.unified_container .row .panel-defau
 
 </head>
 <body>
-    <div id="background_branding_container" data-tenant-branding-background-color="true" style="background-color:#F3EDEA;">
+    <div id="background_branding_container" data-tenant-branding-background-color="true">
   
     </div>
     <div class="container  unified_container " role="presentation">
@@ -556,7 +569,7 @@ font-family: "berlingske_sans_roundregular"}.unified_container .row .panel-defau
           <div class="col-lg-6">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <img class="companyLogo" src="https://staging.hoganlovells.com/-/media/project/english-site/home-page/images/hl-logo_rgb_76x76_final_svg.svg?h=76&iar=0&w=76&hash=BFC587DDDE313C00F9AC12F6D6DD7DBD" alt="Company Logo">
+                    <img class="companyLogo" data-tenant-branding-logo="true" src="https://devengage.altudo.net/-/media/project/english-site/home-page/images/hl-logo_rgb_76x76_final_svg.svg?h=76&amp;iar=0&amp;w=76&amp;hash=BFC587DDDE313C00F9AC12F6D6DD7DBD" alt="Company Logo">
                     <div id="api" data-name="Unified" role="main">
     <div class="claims-provider-list-buttons social" aria-label="Sign in with your social account" role="form">
       <div class="intro">
@@ -629,10 +642,10 @@ font-family: "berlingske_sans_roundregular"}.unified_container .row .panel-defau
                 <div class="login-footer">
                     <div class="login-copy login-mb-10">For technical support, contact 
                       <a href="mailto:ourthinking@hoganlovells.com">ourthinking@hoganlovells.com</a> <br/>
-                      If you were previously registered to our Engage website, you will need to reset your password to access our thinking.                      
+                      If you were previously registered to Engage, you will need to reset your password to access Our thinking.                      
                        </div>
                     <div class="login-copy">© 2024 Hogan Lovells |
-                      <a href="https://www.hoganlovells.com/en/legal-notices/our-thinking-terms-of-use"><u>Terms of use</u></a></div>
+                      <u>Terms of use</u></div>
                 </div>
                 <div id="hidden-text-redirect-url" class="d-none">
                   <!-- testing -->
